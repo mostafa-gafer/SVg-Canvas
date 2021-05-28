@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/canvas.js" defer></script>
+    <script src="js/svg.js" defer></script>
+    <script src="js/script.js" defer></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Svg and Canvas</title>
+</head>
+
+<body>
+    <fieldset>
+        <legend>Charts:</legend>
+        <div id="inputs">
+            <input type="text" id="first" placeholder="Data 1">
+            <input type="number" id="firstPercent" placeholder="percentage 1">
+            <input type="color" id="firstColor">
+            <input type="text" id="second" placeholder="Data 2">
+            <input type="number" id="secondPercent" placeholder="percentage 2">
+            <input type="color" id="secondColor">
+            <input type="text" id="third" placeholder="Data 3">
+            <input type="number" id="thirdPercent" placeholder="percentage 3">
+            <input type="color" id="thirdColor">
+            <input type="text" id="fourth" placeholder="Data 4">
+            <input type="number" id="forthPercent" placeholder="percentage 4">
+            <input type="color" id="fourthColor">
+        </div>
+        <div id="checks">
+            <label for="pie" style="margin-left: -10px;">
+                <input type="checkbox" name="charts" id="pie">
+                Pie Chart
+            </label>
+            <label for="doughnut">
+                <input type="checkbox" name="charts" id="doughnut">
+                Doughnut Chart
+            </label>
+            <label for="line">
+                <input type="checkbox" name="charts" id="line">
+                Line Chart
+            </label>
+            <label for="bar" style="margin-left: -45px;">
+                <input type="checkbox" name="charts" id="bar">
+                Bar Chart
+            </label>
+        </div>
+        <button id="draw">Draw</button>
+    </fieldset>
+    <div id="result">
+    </div>
+    <div id="catStatus"></div>
+    <div id="errors" class="d-none">
+        <ul id="errorsList"></ul>
+    </div>
+</body>
+
+</html>
